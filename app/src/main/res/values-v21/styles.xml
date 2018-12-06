@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_material_dark</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent_material_dark</item>
+        <item name="android:colorBackground">@android:color/background_dark</item>
+
+    </style>
+
+    <style name="TestTheme" parent="android:Theme.Material.NoActionBar" >
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorAccent">@color/accent_material_dark</item>
+        <item name="android:colorBackground">#242424</item>
+        <item name="android:navigationBarColor">#242424</item>
+        <item name="android:colorPrimaryDark">@color/primary</item>
+    </style>
+</resources>

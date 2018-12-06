@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.humanoid.apps.flickr.MainActivity">
+    <item
+        android:id="@+id/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@drawable/image_search"
+        android:orderInCategory="100"
+        android:title="Enter @string/photo_text_tags"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+</menu>
