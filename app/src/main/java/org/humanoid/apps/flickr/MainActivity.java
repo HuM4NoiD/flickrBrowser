@@ -85,6 +85,9 @@ public class MainActivity extends BaseActivity implements GetFlickrJsonData.OnDa
                     GetFlickrJsonData getFlickrJsonData = new GetFlickrJsonData(MainActivity.this, "https://api.flickr.com/services/feeds/photos_public.gne", "en-us", true);
                     getFlickrJsonData.execute(q);
                 }
+
+                mSearchView.clearFocus();
+                mSearchView.onActionViewCollapsed();
                 return false;
             }
 
@@ -134,4 +137,10 @@ public class MainActivity extends BaseActivity implements GetFlickrJsonData.OnDa
 
     }
 
+    @Override
+    public void onBackPressed() {
+        if(!mSearchView.isIconified()){
+            mSearchView.setIconified(true); mSearchView.clearFocus(); mSearchView.onActionViewCollapsed();
+        } else super.onBackPressed();
+    }
 }
